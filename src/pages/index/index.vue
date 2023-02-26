@@ -1,6 +1,5 @@
 <template>
     <view class="content">
-        <image class="logo" src="../../static/logo.png"></image>
         <view>
             <text class="title">{{ title }}</text>
         </view>
@@ -8,13 +7,11 @@
 </template>
 
 <script lang="ts">
-    import {
-        defineComponent
-    } from "vue";
+    import { defineComponent } from 'vue';
     export default defineComponent({
         setup() {
             return {
-                title: "hello",
+                title: 'hello',
             };
         },
     });
