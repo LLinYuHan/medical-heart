@@ -1,41 +1,42 @@
 <template>
     <view class="content">
-        <image class="logo" src="/static/logo.png" />
-        <view class="text-area">
-            <text class="title">{{ title }}</text>
+        <view class="module">
+            <text class="title">预约</text>
+        </view>
+        <view class="module">
+            <text class="title">导航</text>
         </view>
     </view>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
-const title = ref('Hello');
+const title = ref('Hello LinYuHan');
 </script>
 
-<style>
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+<style lang="less" scoped>
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20rpx;
+}
 
-    .logo {
-        height: 200rpx;
-        width: 200rpx;
-        margin-top: 200rpx;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50rpx;
-    }
+.module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100rpx;
+    margin: 20rpx;
+    height: 100rpx;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(89, 113, 231);
+    border-radius: 10rpx;
+}
 
-    .text-area {
-        display: flex;
-        justify-content: center;
-    }
-
-    .title {
-        font-size: 36rpx;
-        color: #8f8f94;
-    }
+.title {
+    font-size: 36rpx;
+    font-weight: 400;
+}
 </style>
